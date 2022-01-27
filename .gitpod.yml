@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - maximedenes.vscoq
+
+# tasks:
+#   - command: >
+#       coqide Hello.v
+
+ports:
+  # vnc port
+  - port: 6080
+    onOpen: open-browser
