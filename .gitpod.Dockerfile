@@ -2,7 +2,8 @@ FROM gitpod/workspace-full-vnc
 
 USER gitpod
 
-RUN sudo apt-get update -y && \
+RUN DEBIAN_FRONTEND=noninteractive \
+    sudo apt-get update -y && \
     sudo apt-get install -y opam && \
     opam init --yes && \
     opam update && \
