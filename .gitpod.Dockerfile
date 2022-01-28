@@ -8,7 +8,7 @@ RUN sudo sysctl kernel.unprivileged_userns_clone=1
 
 RUN sudo apt-get update -y
 RUN sudo apt-get install -y opam 
-RUN opam init -y
+RUN opam init -y --disable-sandboxing
 RUN opam update
 RUN opam switch create 4.12.0 -y
 RUN eval $(opam env)
