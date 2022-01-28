@@ -4,8 +4,6 @@ USER gitpod
 
 ENV OPAMYES=true
 
-RUN sudo sysctl kernel.unprivileged_userns_clone=1
-
 RUN sudo apt-get update -y
 RUN sudo apt-get install -y opam 
 RUN opam init -y --disable-sandboxing
@@ -15,4 +13,4 @@ RUN eval $(opam env)
 RUN opam pin add coq 8.14.0
 RUN opam pin coqide 8.14.0
 RUN eval $(opam env)
-
+∂
