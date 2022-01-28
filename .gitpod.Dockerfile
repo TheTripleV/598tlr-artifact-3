@@ -13,4 +13,4 @@ RUN eval $(opam env)
 RUN opam pin add coq 8.14.0
 RUN opam pin coqide 8.14.0
 RUN eval $(opam env)
-∂
+
