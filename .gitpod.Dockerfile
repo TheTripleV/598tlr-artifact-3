@@ -5,6 +5,7 @@ USER gitpod
 ENV OPAMYES=true
 
 RUN sudo apt-get update -y
+RUN sudo apt-get install -y libexpat1-dev libgtk-3-dev libgtksourceview-3.0-dev
 RUN sudo apt-get install -y opam 
 RUN opam init -y --disable-sandboxing
 RUN opam update
