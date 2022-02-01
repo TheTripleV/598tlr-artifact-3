@@ -7,7 +7,7 @@ vscode:
 
 tasks:
   - command: >
-      eval $(opam env) && bash README.md && (./coqide Tactics.v &)
+      eval $(opam env) && bash ./README.md && (coqide Tactics.v &)
 
 ports:
   # vnc port
