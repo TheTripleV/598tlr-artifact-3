@@ -5,9 +5,10 @@ vscode:
   extensions:
     - maximedenes.vscoq
 
-# tasks:
-#   - command: >
-#       coqide Hello.v
+tasks:
+  - command: >
+      eval $(opam env)
+      coqide Tactics.v
 
 ports:
   # vnc port
