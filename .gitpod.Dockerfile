@@ -7,6 +7,7 @@ ENV OPAMYES=true
 RUN sudo apt-get update -y
 RUN sudo apt-get install -y libexpat1-dev libgtk-3-dev libgtksourceview-3.0-dev
 RUN sudo apt-get install -y opam 
+RUN sudo apt-get install -y yaru-theme-icon
 RUN opam init -y --disable-sandboxing
 RUN opam update
 RUN opam switch create 4.12.0 -y
