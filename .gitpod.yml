@@ -10,7 +10,7 @@ tasks:
       eval $(opam env)
       && bash ./README.md
       && bash ./README.md  > ./README2.md
-      && (coqide Tactics.v &)
+      && (coqide reflection.v &)
       && code README2.md
       && bash ./README.md
 
